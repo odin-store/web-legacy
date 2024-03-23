@@ -1,0 +1,17 @@
+$background-color: rgb(12, 12, 12);
+$highlight-color: #f7c14c;
+
+.license-title {
+  p {
+    font-weight: 200;
+  }
+  margin-bottom: 40px;
+}
+
+.license-link {
+  font-size: 12px;
+  background-color: $highlight-color;
+  color: $background-color;
+  padding: 10px 20px;
+  border-radius: 5px;
+}

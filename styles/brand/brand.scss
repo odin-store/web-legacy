@@ -1,0 +1,132 @@
+$background-color: rgb(12, 12, 12);
+$highlight-color: #f7c14c;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.brand-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.brand-remotes {
+  position: sticky;
+  top: 20px;
+  width: 200px;
+  height: 500px;
+  margin-right: 20px;
+}
+
+.brand-remotes-category {
+  p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    margin-top: 30px;
+    font-weight: 800;
+    margin-bottom: 15px;
+  }
+  a {
+    &:hover {
+      color: rgba(255, 255, 255, 0.877);
+    }
+    font-size: 12px;
+    font-weight: 200;
+    margin: 2px 0;
+    color: rgba(255, 255, 255, 0.678);
+    transition: color 0.3s ease-in-out;
+  }
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-body {
+  width: 100%;
+}
+
+.brand-logo-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.brand-logo {
+  p {
+    margin: 0;
+    padding: 20px;
+  }
+  img {
+    width: 50%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+  }
+  a {
+    svg {
+      margin-right: 5px;
+    }
+    font-size: 15px;
+    margin-left: auto;
+    border: 0;
+    background-color: transparent;
+    color: $highlight-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 49%;
+  background-color: rgba(255, 255, 255, 0.041);
+  overflow: hidden;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.brand-title {
+  h2 {
+    margin: 10px 0;
+  }
+  p {
+    font-weight: 300;
+    font-size: 12px;
+  }
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.brand-colors {
+  p {
+    margin: 0;
+    opacity: 60%;
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  h3 {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  padding: 40px;
+  margin: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  font-family: inherit;
+}
+
+.brand-color-black {
+  border: 1px solid white;
+  background-color: $background-color;
+  color: white;
+}
+
+.brand-color-gold {
+  background-color: $highlight-color;
+  color: $background-color;
+}

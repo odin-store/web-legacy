@@ -1,0 +1,140 @@
+$background-color: rgb(12, 12, 12);
+$highlight-color: #f7c14c;
+
+* {
+  &::selection {
+    background-color: rgba(255, 255, 255, 0.075);
+  }
+  box-sizing: border-box;
+  font-family: "noto-sans";
+}
+
+body {
+  margin: 0;
+  background-color: $background-color;
+  color: white;
+}
+
+main {
+  min-height: 70vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 80px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+.global-header {
+  max-width: 1200px;
+  display: flex;
+  padding: 20px 40px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.global-header-logo {
+  img {
+    width: 60px;
+    height: auto;
+  }
+}
+
+.global-header-last {
+  a {
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 20px;
+  }
+}
+
+.global-header-download {
+  &:hover {
+    background-color: white;
+    color: $background-color;
+  }
+  border: 1px solid white;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+footer {
+  background-color: rgb(8, 8, 8);
+  padding: 1px;
+}
+
+.footer-body {
+  img {
+    width: 80px;
+    height: auto;
+  }
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  padding: 40px;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.footer-items {
+  display: flex;
+}
+
+.footer-category {
+  h4 {
+    font-size: 15px;
+  }
+  a {
+    &:hover {
+      color: rgba(255, 255, 255, 0.87);
+    }
+    color: rgba(255, 255, 255, 0.404);
+    font-weight: 300;
+    font-size: 12px;
+    transition: color 0.3s ease-in-out;
+  }
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.not-found {
+  h2 {
+    margin: 0;
+    font-size: 40px;
+  }
+  h1 {
+    font-size: 20px;
+    margin: 0;
+    margin-top: 20px;
+  }
+  p {
+    font-weight: 300;
+    font-size: 12px;
+    margin: 5px 0;
+  }
+  a {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: $highlight-color;
+    color: $background-color;
+    border-radius: 12px;
+    font-size: 12px;
+  }
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
